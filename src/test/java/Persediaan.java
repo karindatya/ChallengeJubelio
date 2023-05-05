@@ -24,6 +24,8 @@ public class Persediaan extends env_target {
         driver.get(baseUrl);
         driver.get("https://app.jubelio.com/login");
         Duration duration = Duration.ofSeconds(5);
+
+        //step login
         WebDriverWait wait = new WebDriverWait(driver, duration);
         wait.until(
                 ExpectedConditions.visibilityOfElementLocated(By.name("email"))
@@ -31,21 +33,23 @@ public class Persediaan extends env_target {
         driver.findElement(By .name("email")).sendKeys("qa.rakamin.jubelio@gmail.com");
         driver.findElement(By.name("password")).sendKeys("Jubelio123!");
         driver.findElement(By.xpath("//*[@id=\"root\"]/div/div/div[1]/div/div[2]/div/form/button")).click();
+
+        //step persediaan
         wait.until(
                 ExpectedConditions.visibilityOfElementLocated(By .xpath("//*[@id=\"page-wrapper\"]/div[2]/div/div/div[1]/h1"))
         );
         driver.get("https://app.jubelio.com/home/inventory/");
         driver.findElement(By.xpath("//*[@id=\"page-wrapper\"]/div[3]/div/div/div/div[2]/div/div/div/div/div/div[1]/div[2]/div/button[2]/span[1]")).click();
+
+        //atur persediaan
         wait.until(
                 ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"page-wrapper\"]/div[3]/div/div/div/div[2]/div/div/div/div/h2"))
         );
         driver.findElement(By.xpath("//*[@id=\"page-wrapper\"]/div[3]/div/div/div/div[2]/div/div/div/div/div[1]/div/div[2]/div/div/div[2]/div/div[2]/div/div/div[2]/div/div/div[2]/div/div/div[1]")).click();
-
         Actions actions = new Actions(driver);
         actions.doubleClick(
                 driver.findElement(By.xpath("//*[@id=\"page-wrapper\"]/div[3]/div/div/div/div[2]/div/div/div/div/div[1]/div/div[2]/div/div/div[2]/div/div[2]/div/div/div[2]/div/div/div[2]/div/div/div[1]"))
         ).perform();
-
         wait.until(
                 ExpectedConditions.visibilityOfElementLocated(By.className("selectivity-result-item"))
         );
@@ -57,15 +61,14 @@ public class Persediaan extends env_target {
                 driver.findElement(By.xpath("//*[@id=\"page-wrapper\"]/div[3]/div/div/div/div[2]/div/div/div/div/div[1]/div/div[2]/div/div/div[2]/div/div[2]/div/div/div[2]/div/div/div[2]/div[1]/div/div[2]"))
         ).perform();
 
-
         // Input number 1 to qty
-
         driver.findElement(By.xpath("//*[@id=\"page-top\"]/div[6]/div/input")).sendKeys("1");
         driver.findElement(By.xpath("//*[@id=\"page-wrapper\"]/div[3]/div/div/div/div[2]/div/div/div/div/div[1]/div/div[2]/div/div/div[2]/div/div[2]/div/div/div[2]/div/div/div[2]/div[2]/div/div[2]/div")).click();
 
         // Click Simpan button
         driver.findElement(By.cssSelector("#page-wrapper > div.wrapper.wrapper-content > div > div > div > div:nth-child(2) > div > div > div > div > div:nth-child(6) > div > button > span.ladda-label")).click();
 
+        //verify element persediaan
         wait.until(
                 ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"page-wrapper\"]/div[2]/div/div/div[1]/h1"))
         );
