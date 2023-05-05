@@ -66,12 +66,12 @@ public class Persediaan extends env_target {
         driver.findElement(By.xpath("//*[@id=\"page-wrapper\"]/div[3]/div/div/div/div[2]/div/div/div/div/div[1]/div/div[2]/div/div/div[2]/div/div[2]/div/div/div[2]/div/div/div[2]/div[2]/div/div[2]/div")).click();
 
         // Click Simpan button
-        driver.findElement(By.xpath("//*[@id=\"page-wrapper\"]/div[3]/div/div/div/div[2]/div/div/div/div/div[3]/div/buttonin")).click();
+        driver.findElement(By.cssSelector("#page-wrapper > div.wrapper.wrapper-content > div > div > div > div:nth-child(2) > div > div > div > div > div:nth-child(6) > div > button > span.ladda-label")).click();
 
 
 
         wait.until(
-                ExpectedConditions.visibilityOfElementLocated(By.xpath("*[@id=\"page-wrapper\"]/div[2]/div/div/div[1]/h1"))
+                ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"page-wrapper\"]/div[2]/div/div/div[1]/h1"))
         );
 
 
