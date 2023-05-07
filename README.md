@@ -17,65 +17,64 @@ Report                : RegressionReport.html
 Steps:
 1. Create repository in GitHub :
 
-![Screenshot 2023-05-07 at 19.05.43.png](..%2F..%2F..%2F..%2Fvar%2Ffolders%2Fkv%2F2qr2f8_52zlb2tgb7j02s9mw0000gn%2FT%2FTemporaryItems%2FNSIRD_screencaptureui_crqrNj%2FScreenshot%202023-05-07%20at%2019.05.43.png)
+![1](https://user-images.githubusercontent.com/131270958/236683287-4d8d6fe2-6df7-49c8-9b30-896fc62777a5.png)
 
 2. Create New Project :
 
-![Screenshot 2023-05-07 at 19.16.24.png](..%2F..%2F..%2F..%2Fvar%2Ffolders%2Fkv%2F2qr2f8_52zlb2tgb7j02s9mw0000gn%2FT%2FTemporaryItems%2FNSIRD_screencaptureui_jGqagK%2FScreenshot%202023-05-07%20at%2019.16.24.png)
+![2](https://user-images.githubusercontent.com/131270958/236683400-4576b15d-6e5e-4134-8155-5ca98d6495ea.png)
+
 
 3. Connect local project with existing GitHub repository
 
 4. Select Java language :
 
-![Screenshot 2023-05-07 at 19.23.25.png](..%2F..%2FDesktop%2FScreenshot%202023-05-07%20at%2019.23.25.png)
+![4](https://user-images.githubusercontent.com/131270958/236683440-796ab042-e468-4773-8918-f9bd6eb57c0d.png)
 
 5. Fill mvn repositories dependencies for selenium, junit jupiter, cucumber and cucumber reporting in pom.xml :
 
-![Screenshot 2023-05-07 at 19.56.21.png](..%2F..%2F..%2F..%2Fvar%2Ffolders%2Fkv%2F2qr2f8_52zlb2tgb7j02s9mw0000gn%2FT%2FTemporaryItems%2FNSIRD_screencaptureui_mIUhub%2FScreenshot%202023-05-07%20at%2019.56.21.png)
-
-![Screenshot 2023-05-07 at 19.57.13.png](..%2F..%2F..%2F..%2Fvar%2Ffolders%2Fkv%2F2qr2f8_52zlb2tgb7j02s9mw0000gn%2FT%2FTemporaryItems%2FNSIRD_screencaptureui_JDYC8Q%2FScreenshot%202023-05-07%20at%2019.57.13.png)
+![5](https://user-images.githubusercontent.com/131270958/236683515-f26fd2e5-8478-47ff-a231-e762e054e6ac.png)
 
 6. Download chromedriver based on OS and Chrome version
 
 7. Copy chromedriver to resources : 
 
-![Screenshot 2023-05-07 at 19.31.10.png](..%2F..%2F..%2F..%2Fvar%2Ffolders%2Fkv%2F2qr2f8_52zlb2tgb7j02s9mw0000gn%2FT%2FTemporaryItems%2FNSIRD_screencaptureui_Cz5xfc%2FScreenshot%202023-05-07%20at%2019.31.10.png)
+![7](https://user-images.githubusercontent.com/131270958/236683546-58337922-7a49-4acb-b547-9e1028ef3b53.png)
 
 8. Create new 'config' package :
 
-![Screenshot 2023-05-07 at 19.35.53.png](..%2F..%2F..%2F..%2Fvar%2Ffolders%2Fkv%2F2qr2f8_52zlb2tgb7j02s9mw0000gn%2FT%2FTemporaryItems%2FNSIRD_screencaptureui_Lo9UCO%2FScreenshot%202023-05-07%20at%2019.35.53.png)
+![8](https://user-images.githubusercontent.com/131270958/236683592-51691aa0-9778-4c77-b5ca-861dc2ea8a8b.png)
 
 9. Create new `env_target` java class :
 
-![Screenshot 2023-05-07 at 19.38.03.png](..%2F..%2F..%2F..%2Fvar%2Ffolders%2Fkv%2F2qr2f8_52zlb2tgb7j02s9mw0000gn%2FT%2FTemporaryItems%2FNSIRD_screencaptureui_clb3hX%2FScreenshot%202023-05-07%20at%2019.38.03.png)
+![9](https://user-images.githubusercontent.com/131270958/236683636-28bf2148-9ffb-468b-83b2-b45df544b021.png)
 
 10. Fill env_target.java :
 
-![Screenshot 2023-05-07 at 19.40.42.png](..%2F..%2F..%2F..%2Fvar%2Ffolders%2Fkv%2F2qr2f8_52zlb2tgb7j02s9mw0000gn%2FT%2FTemporaryItems%2FNSIRD_screencaptureui_L5niMz%2FScreenshot%202023-05-07%20at%2019.40.42.png)
+![10](https://user-images.githubusercontent.com/131270958/236683655-ee581864-f5af-4652-9ddd-309ab9a26117.png)
 
 11. Create Login/Persediaan as New Java Class :
 
-![Screenshot 2023-05-07 at 19.43.15.png](..%2F..%2F..%2F..%2Fvar%2Ffolders%2Fkv%2F2qr2f8_52zlb2tgb7j02s9mw0000gn%2FT%2FTemporaryItems%2FNSIRD_screencaptureui_C98ZdV%2FScreenshot%202023-05-07%20at%2019.43.15.png)
+![11](https://user-images.githubusercontent.com/131270958/236683707-bbead079-e32a-49e6-bf04-dc032af138a9.png)
 
 12. Fill test code in java class (example : xpath element, etc ) :
 
-![Screenshot 2023-05-07 at 19.48.49.png](..%2F..%2F..%2F..%2Fvar%2Ffolders%2Fkv%2F2qr2f8_52zlb2tgb7j02s9mw0000gn%2FT%2FTemporaryItems%2FNSIRD_screencaptureui_XdsmB4%2FScreenshot%202023-05-07%20at%2019.48.49.png)
+![12](https://user-images.githubusercontent.com/131270958/236683744-c26b2397-6ea7-4a13-9b98-69d3dbd19fe6.png)
 
 13. Create 'resources' as New Directory :
 
-![Screenshot 2023-05-07 at 20.00.01.png](..%2F..%2F..%2F..%2Fvar%2Ffolders%2Fkv%2F2qr2f8_52zlb2tgb7j02s9mw0000gn%2FT%2FTemporaryItems%2FNSIRD_screencaptureui_oXAxm4%2FScreenshot%202023-05-07%20at%2020.00.01.png)
+![13](https://user-images.githubusercontent.com/131270958/236683778-08c57bb9-8c7f-444d-bcdb-db763d906a62.png)
 
 14. Create 'features' as New Directory :
 
-![Screenshot 2023-05-07 at 20.03.51.png](..%2F..%2F..%2F..%2Fvar%2Ffolders%2Fkv%2F2qr2f8_52zlb2tgb7j02s9mw0000gn%2FT%2FTemporaryItems%2FNSIRD_screencaptureui_kq5cOJ%2FScreenshot%202023-05-07%20at%2020.03.51.png)
+![14](https://user-images.githubusercontent.com/131270958/236683801-108c670b-f16f-49dc-95ac-99b185bcdbdc.png)
 
 15. Create Login.feature (example) as New File :
 
-![Screenshot 2023-05-07 at 20.06.35.png](..%2F..%2F..%2F..%2Fvar%2Ffolders%2Fkv%2F2qr2f8_52zlb2tgb7j02s9mw0000gn%2FT%2FTemporaryItems%2FNSIRD_screencaptureui_PApopC%2FScreenshot%202023-05-07%20at%2020.06.35.png)
+![15](https://user-images.githubusercontent.com/131270958/236683829-c2a1d2a9-7bea-4ec0-9ed2-884f0da4dd41.png)
 
 16. Write scenario in Login.feature :
 
-![Screenshot 2023-05-07 at 20.07.53.png](..%2F..%2F..%2F..%2Fvar%2Ffolders%2Fkv%2F2qr2f8_52zlb2tgb7j02s9mw0000gn%2FT%2FTemporaryItems%2FNSIRD_screencaptureui_H9vcBi%2FScreenshot%202023-05-07%20at%2020.07.53.png)
+![16](https://user-images.githubusercontent.com/131270958/236683881-b5d26dc5-bd1a-4744-8ee4-3fb4cdd98b16.png)
 
 17. Create all step definitions in login.feature 
 
@@ -83,31 +82,31 @@ Steps:
 
 19. Create 'stepDef' as New Package :
 
-![Screenshot 2023-05-07 at 20.14.21.png](..%2F..%2F..%2F..%2Fvar%2Ffolders%2Fkv%2F2qr2f8_52zlb2tgb7j02s9mw0000gn%2FT%2FTemporaryItems%2FNSIRD_screencaptureui_xCuOb6%2FScreenshot%202023-05-07%20at%2020.14.21.png)
+![19](https://user-images.githubusercontent.com/131270958/236683903-6b12ae70-02ad-40bf-a4b7-f2c83d721c93.png)
 
 20. Copy element in Login.java to LoginBdd.java :
 
-![Screenshot 2023-05-07 at 20.17.08.png](..%2F..%2F..%2F..%2Fvar%2Ffolders%2Fkv%2F2qr2f8_52zlb2tgb7j02s9mw0000gn%2FT%2FTemporaryItems%2FNSIRD_screencaptureui_l6KbhB%2FScreenshot%202023-05-07%20at%2020.17.08.png)
+![20](https://user-images.githubusercontent.com/131270958/236683921-58d4d2f9-8bba-427b-a251-8b4ae331b01f.png)
 
 21. Create 'runner' as New Package :
 
-![Screenshot 2023-05-07 at 20.24.36.png](..%2F..%2F..%2F..%2Fvar%2Ffolders%2Fkv%2F2qr2f8_52zlb2tgb7j02s9mw0000gn%2FT%2FTemporaryItems%2FNSIRD_screencaptureui_syFTuU%2FScreenshot%202023-05-07%20at%2020.24.36.png)
+![21](https://user-images.githubusercontent.com/131270958/236683938-a52fa482-9e35-4be8-82c8-a28abe273560.png)
 
 22. Create 'RunTest' as New Java Class :
 
-![Screenshot 2023-05-07 at 20.26.06.png](..%2F..%2F..%2F..%2Fvar%2Ffolders%2Fkv%2F2qr2f8_52zlb2tgb7j02s9mw0000gn%2FT%2FTemporaryItems%2FNSIRD_screencaptureui_DTVHea%2FScreenshot%202023-05-07%20at%2020.26.06.png)
+![22](https://user-images.githubusercontent.com/131270958/236683981-17f8b076-223b-456f-a496-e67be79a17fd.png)
 
 23. Create code in RunTest.Java :
 
-![Screenshot 2023-05-07 at 20.23.11.png](..%2F..%2F..%2F..%2Fvar%2Ffolders%2Fkv%2F2qr2f8_52zlb2tgb7j02s9mw0000gn%2FT%2FTemporaryItems%2FNSIRD_screencaptureui_DBVqg4%2FScreenshot%202023-05-07%20at%2020.23.11.png)
+![23](https://user-images.githubusercontent.com/131270958/236684027-2c285e6f-472f-46a1-ab44-16cb4b589eda.png)
 
 24. Edit configuration and add Runner in JUnit :
 
-![Screenshot 2023-05-07 at 20.28.19.png](..%2F..%2F..%2F..%2Fvar%2Ffolders%2Fkv%2F2qr2f8_52zlb2tgb7j02s9mw0000gn%2FT%2FTemporaryItems%2FNSIRD_screencaptureui_PjlHxX%2FScreenshot%202023-05-07%20at%2020.28.19.png)
+![24](https://user-images.githubusercontent.com/131270958/236684057-d60d5199-e86b-44c0-8492-4cb5927e3493.png)
 
 25. Run the Runner configuration :
 
-![Screenshot 2023-05-07 at 20.29.37.png](..%2F..%2F..%2F..%2Fvar%2Ffolders%2Fkv%2F2qr2f8_52zlb2tgb7j02s9mw0000gn%2FT%2FTemporaryItems%2FNSIRD_screencaptureui_HURQVH%2FScreenshot%202023-05-07%20at%2020.29.37.png)
+![25](https://user-images.githubusercontent.com/131270958/236684104-071993a7-535a-4071-87ca-52a9a67c8350.png)
 
 26. Commit all code
 
