@@ -11,7 +11,7 @@ public class Login extends env_target {
     @Test
     public void main () {
         //Set driverlocation path
-        System.setProperty("webdriver.chrome.driver", "src/main/resources/drivers/chromedriver");
+        System.setProperty("webdriver.chrome.driver", "src/test/resources/drivers/chromedriver");
         //Maximize driver
         driver = new ChromeDriver();
         driver.manage().window().maximize();
@@ -24,7 +24,7 @@ public class Login extends env_target {
                 ExpectedConditions.visibilityOfElementLocated(By .xpath("//*[@id=\"root\"]/div/div/div[1]/div/div[2]/div/form/button"))
         );
 
-        //input emai, password dan click button masuk
+        //input email, password dan click button masuk
         driver.findElement(By .name("email")).sendKeys("qa.rakamin.jubelio@gmail.com");
         driver.findElement(By.name("password")).sendKeys("Jubelio123!");
         driver.findElement(By.xpath("//*[@id=\"root\"]/div/div/div[1]/div/div[2]/div/form/button")).click();

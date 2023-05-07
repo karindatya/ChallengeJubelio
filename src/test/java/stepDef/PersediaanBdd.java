@@ -1,57 +1,51 @@
+package stepDef;
+
 import config.env_target;
-import io.cucumber.java.AfterAll;
-import io.cucumber.java.BeforeAll;
-import org.junit.jupiter.api.Test;
+import io.cucumber.java.en.And;
+import io.cucumber.java.en.Then;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 
-public class Persediaan extends env_target {
+public class PersediaanBdd extends env_target {
 
-    @Test
-    public void main () {
-        //Set driverlocation path
-        System.setProperty("webdriver.chrome.driver", "src/test/resources/drivers/chromedriver");
-        //Maximize driver
-        driver = new ChromeDriver();
-        driver.manage().window().maximize();
-        //Set Url
-        driver.get(baseUrl);
-        driver.get("https://app.jubelio.com/login");
-        Duration duration = Duration.ofSeconds(5);
-
-        //step login
-        WebDriverWait wait = new WebDriverWait(driver, duration);
-        wait.until(
-                ExpectedConditions.visibilityOfElementLocated(By.name("email"))
-        );
-        driver.findElement(By .name("email")).sendKeys("qa.rakamin.jubelio@gmail.com");
-        driver.findElement(By.name("password")).sendKeys("Jubelio123!");
-        driver.findElement(By.xpath("//*[@id=\"root\"]/div/div/div[1]/div/div[2]/div/form/button")).click();
-
+    @And("User click barang")
+    public void userClickBarang() {
         //click barang
-        wait.until(
-                ExpectedConditions.visibilityOfElementLocated(By .xpath("//*[@id=\"page-wrapper\"]/div[2]/div/div/div[1]/h1"))
-        );
         driver.findElement(By.xpath("//*[@id=\"wrapper\"]/nav/div/div/ul/li[2]/a")).click();
+    }
 
+    @And("User click persediaan")
+    public void userClickPersediaan() {
         //click persediaan
         driver.findElement(By.xpath("//*[@id=\"wrapper\"]/nav/div/div/ul/li[2]/ul/li[2]/a")).click();
+    }
 
+    @And("User verify penyesuaian persediaan")
+    public void userVerifyPenyesuaianPersediaan() {
         //verifiy penyesuaian persediaan
+        Duration duration = Duration.ofSeconds(5);
+        WebDriverWait wait = new WebDriverWait(driver, duration);
         wait.until(
                 ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"page-wrapper\"]/div[3]/div/div/div/div[2]/div/div/div/div/div/div[1]/div[2]/div/button[2]"))
         );
+    }
 
+    @And("User click penyesuaian persediaan")
+    public void userClickPenyesuaianPersediaan() {
         //click penyesuaian persediaan
         driver.findElement(By.xpath("//*[@id=\"page-wrapper\"]/div[3]/div/div/div/div[2]/div/div/div/div/div/div[1]/div[2]/div/button[2]")).click();
+    }
 
+    @And("User choose product")
+    public void userChooseProduct() {
         //pilih barang
+        Duration duration = Duration.ofSeconds(5);
+        WebDriverWait wait = new WebDriverWait(driver, duration);
         wait.until(
                 ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"page-wrapper\"]/div[3]/div/div/div/div[2]/div/div/div/div/div[1]/div/div[2]/div/div/div[2]/div/div[2]/div/div/div[2]/div/div/div[2]/div/div/div[1]"))
         );
@@ -63,27 +57,35 @@ public class Persediaan extends env_target {
                 ExpectedConditions.visibilityOfElementLocated(By.className("selectivity-result-item"))
         );
         driver.findElement(By.className("selectivity-result-item")).click();
+    }
 
-        JavascriptExecutor jse = (JavascriptExecutor) driver;
-        jse.executeScript("window.scrollBy(0,1000)");
-
+    @And("User fill quantity")
+    public void userFillQuantity() {
         // fill qty
         driver.findElement(By.xpath("//*[@id=\"page-wrapper\"]/div[3]/div/div/div/div[2]/div/div/div/div/div[1]/div/div[2]/div/div/div[2]/div/div[2]/div/div/div[2]/div/div/div[2]/div[1]/div/div[2]")).click();
+        Actions actions = new Actions(driver);
         actions.doubleClick(
                 driver.findElement(By.xpath("//*[@id=\"page-wrapper\"]/div[3]/div/div/div/div[2]/div/div/div/div/div[1]/div/div[2]/div/div/div[2]/div/div[2]/div/div/div[2]/div/div/div[2]/div[1]/div/div[2]"))
         ).perform();
         driver.findElement(By.xpath("//*[@id=\"page-top\"]/div[6]/div/input")).sendKeys("1");
         driver.findElement(By.xpath("//*[@id=\"page-wrapper\"]/div[3]/div/div/div/div[2]/div/div/div/div/div[1]/div/div[2]/div/div/div[2]/div/div[2]/div/div/div[2]/div/div/div[2]/div[2]/div/div[2]/div")).click();
+    }
 
+    @And("User click simpan button")
+    public void userClickSimpanButton() {
+        JavascriptExecutor jse = (JavascriptExecutor) driver;
+        jse.executeScript("window.scrollBy(0,1000)");
 
         // Click Simpan button
         driver.findElement(By.xpath("//*[@id=\"page-wrapper\"]/div[3]/div/div/div/div[2]/div/div/div/div/div[3]/div/button")).click();
+    }
 
-        //verify element persediaan
+    @Then("User redirect to persediaan page")
+    public void userRedirectToPersediaanPage() {
+        Duration duration = Duration.ofSeconds(2);
+        WebDriverWait wait = new WebDriverWait(driver, duration);
         wait.until(
                 ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"page-wrapper\"]/div[2]/div/div/div[1]/h1"))
         );
-
-        driver.quit();
     }
 }

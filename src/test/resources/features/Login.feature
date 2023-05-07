@@ -1,7 +1,7 @@
 @All
   Feature: Login
 
-    @Test1
+    @TestLogin
     Scenario: Login
       Given User is in login page
       When User fill email and password
