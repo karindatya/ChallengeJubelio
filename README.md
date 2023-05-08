@@ -111,3 +111,12 @@ Steps:
 26. Commit all code
 
 27. Push to origin
+
+
+Evidence of Run Web Automation :
+
+1. Screen recording : https://youtu.be/iVSyuROJOR0
+
+2. Run results ( jumlah scenario & jumlah step) :
+
+3. HTML Report :
