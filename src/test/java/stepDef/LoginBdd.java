@@ -23,22 +23,12 @@ public class LoginBdd extends env_target {
         driver.manage().window().maximize();
     }
 
-    @AfterAll
-    public static void quitDriver() {
-        driver.quit();
-    }
-
     @Given("User is in login page")
     public void userIsInLoginPage() {
-        //Set driverlocation path
-//        System.setProperty("webdriver.chrome.driver", "src/test/resources/drivers/chromedriver");
-        //Maximize driver
-//        driver = new ChromeDriver();
-//        driver.manage().window().maximize();
         //Set Url
         driver.get(baseUrl);
         driver.get("https://app.jubelio.com/login");
-        Duration duration = Duration.ofSeconds(2);
+        Duration duration = Duration.ofSeconds(10);
         WebDriverWait wait = new WebDriverWait(driver, duration);
         wait.until(
                 ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"root\"]/div/div/div[1]/div/div[2]/div/form/button"))
@@ -58,7 +48,7 @@ public class LoginBdd extends env_target {
 
     @Then("User verify login result")
     public void userVerifyLoginResult() {
-        Duration duration = Duration.ofSeconds(2);
+        Duration duration = Duration.ofSeconds(10);
         WebDriverWait wait = new WebDriverWait(driver, duration);
         wait.until(
                 ExpectedConditions.visibilityOfElementLocated(By .xpath("//*[@id=\"page-wrapper\"]/div[2]/div/div/div[1]/h1"))

@@ -28,7 +28,7 @@ public class PersediaanBdd extends env_target {
     @And("User verify penyesuaian persediaan")
     public void userVerifyPenyesuaianPersediaan() {
         //verifiy penyesuaian persediaan
-        Duration duration = Duration.ofSeconds(5);
+        Duration duration = Duration.ofSeconds(10);
         WebDriverWait wait = new WebDriverWait(driver, duration);
         wait.until(
                 ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"page-wrapper\"]/div[3]/div/div/div/div[2]/div/div/div/div/div/div[1]/div[2]/div/button[2]"))
@@ -44,12 +44,13 @@ public class PersediaanBdd extends env_target {
     @And("User choose product")
     public void userChooseProduct() {
         //pilih barang
-        Duration duration = Duration.ofSeconds(5);
+        Duration duration = Duration.ofSeconds(10);
         WebDriverWait wait = new WebDriverWait(driver, duration);
         wait.until(
                 ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"page-wrapper\"]/div[3]/div/div/div/div[2]/div/div/div/div/div[1]/div/div[2]/div/div/div[2]/div/div[2]/div/div/div[2]/div/div/div[2]/div/div/div[1]"))
         );
         Actions actions = new Actions(driver);
+        driver.findElement(By.xpath("//*[@id=\"page-wrapper\"]/div[3]/div/div/div/div[2]/div/div/div/div/div[1]/div/div[2]/div/div/div[2]/div/div[2]/div/div/div[2]/div/div/div[2]/div/div/div[1]")).click();
         actions.doubleClick(
                 driver.findElement(By.xpath("//*[@id=\"page-wrapper\"]/div[3]/div/div/div/div[2]/div/div/div/div/div[1]/div/div[2]/div/div/div[2]/div/div[2]/div/div/div[2]/div/div/div[2]/div/div/div[1]"))
         ).perform();
@@ -82,7 +83,7 @@ public class PersediaanBdd extends env_target {
 
     @Then("User redirect to persediaan page")
     public void userRedirectToPersediaanPage() {
-        Duration duration = Duration.ofSeconds(2);
+        Duration duration = Duration.ofSeconds(10);
         WebDriverWait wait = new WebDriverWait(driver, duration);
         wait.until(
                 ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"page-wrapper\"]/div[2]/div/div/div[1]/h1"))

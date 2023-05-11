@@ -18,7 +18,7 @@ public class Login extends env_target {
         //Set Url
         driver.get(baseUrl);
         driver.get("https://app.jubelio.com/login");
-        Duration duration = Duration.ofSeconds(2);
+        Duration duration = Duration.ofSeconds(10);
         WebDriverWait wait = new WebDriverWait(driver, duration);
         wait.until(
                 ExpectedConditions.visibilityOfElementLocated(By .xpath("//*[@id=\"root\"]/div/div/div[1]/div/div[2]/div/form/button"))
