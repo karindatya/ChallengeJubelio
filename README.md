@@ -113,10 +113,20 @@ Steps:
 27. Push to origin
 
 
+
+
+
+
 Evidence of Run Web Automation :
 
 1. Screen recording : https://youtu.be/iVSyuROJOR0
 
-2. Run results ( jumlah scenario & jumlah step) :
+2. Run results ( jumlah scenario & jumlah step) : 
 
-3. HTML Report :
+<img width="1033" alt="Run results " src="https://user-images.githubusercontent.com/131270958/236826489-7545865e-e8f3-4d93-ac27-af43573e2088.png">
+
+
+3. HTML Report : 
+
+<img width="1204" alt="HTML Report" src="https://user-images.githubusercontent.com/131270958/236826571-827ac9e2-64c0-400d-8e99-d349259a3835.png">
+
