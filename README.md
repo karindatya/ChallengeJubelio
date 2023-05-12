@@ -115,18 +115,19 @@ Steps:
 
 
 
-
-
 Evidence of Run Web Automation :
 
-1. Screen recording : https://youtu.be/iVSyuROJOR0
+1. Screen recording :
 
-2. Run results ( jumlah scenario & jumlah step) : 
+https://youtu.be/qw0z94BHKck
 
-<img width="1033" alt="Run results " src="https://user-images.githubusercontent.com/131270958/236826489-7545865e-e8f3-4d93-ac27-af43573e2088.png">
+2. Run results ( jumlah scenario & jumlah step) :
+   
+https://drive.google.com/file/d/1P60Kqch6FbX9lUDQVR6FPovo3BYJ5Lgq/view?usp=sharing
+
+3. HTML Cucumber Report :
+
+https://drive.google.com/file/d/1YUMFMve_UpDKU5IMftnDXxYmrr2i-n2W/view?usp=sharing
 
 
-3. HTML Report : 
-
-<img width="1204" alt="HTML Report" src="https://user-images.githubusercontent.com/131270958/236826571-827ac9e2-64c0-400d-8e99-d349259a3835.png">
 
