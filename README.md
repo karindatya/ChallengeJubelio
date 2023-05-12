@@ -123,11 +123,13 @@ https://youtu.be/qw0z94BHKck
 
 2. Run results ( jumlah scenario & jumlah step) :
    
-https://drive.google.com/file/d/1P60Kqch6FbX9lUDQVR6FPovo3BYJ5Lgq/view?usp=sharing
+<img width="1440" alt="Run results web automation-Karindatya" src="https://github.com/karindatya/ChallengeJubelio/assets/131270958/c101305c-e7ae-4c33-a902-377635141711">
+
 
 3. HTML Cucumber Report :
 
-https://drive.google.com/file/d/1YUMFMve_UpDKU5IMftnDXxYmrr2i-n2W/view?usp=sharing
+<img width="1440" alt="Web Automation Report-Karindatya" src="https://github.com/karindatya/ChallengeJubelio/assets/131270958/4ab811a8-abd7-4425-be39-0869e3d4dc09">
+
 
 
 
